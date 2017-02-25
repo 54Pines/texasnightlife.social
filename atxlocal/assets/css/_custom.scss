@@ -1,0 +1,627 @@
+$sm-sp-unit:0.5em;
+$md-sp-unit:1.5em;
+$lg-sp-unit:5em;
+.body-content {
+    @include padding(0 !important);
+}
+
+.locked {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+section {
+    @include margin(0);
+}
+
+.navbar-fixed-top {
+    position: absolute;
+}
+
+.navbar-nav {
+    @include margin(0 auto);
+    display: block;
+    position: relative;
+    float: none;
+    // max-width: 455px;
+}
+
+.navbar-solid {
+    background-color: transparent;
+}
+
+#loader {
+    background-image: url(../img/hipster-logo.png);
+    background-attachment: absolute;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left:15%;
+    right:15%;
+    top: 0;
+    width: 70vw;
+    height: 100%;
+}
+
+// #about {
+//     position: absolute;
+//     top: -0.7em;
+// }
+.site-header,
+.menu-header,
+.time,
+.store,
+.hat,
+.contact,
+.footer {
+    z-index: 1;
+}
+
+.divider {
+    width: 60% !important;
+    // max-width: 200px !important;
+    position: absolute;
+    z-index: 100;
+    bottom: 3em;
+    left: 20%;
+    right: 20%;
+    // overflow:visible;
+    // fill: currentColor;
+}
+
+// .layer-1 {
+//     fill: currentColor;
+// }
+.parallax-hero {
+    background-image: url(../img/congress_ave.jpg) !important;
+    background-attachment: scroll;
+    z-index: 0;
+    overflow: hidden;
+    z-index: 200;
+}
+
+.site-header .intro img {
+    height: auto;
+    width: 100%;
+    max-width: 550px;
+    z-index: 2;
+    position: relative;
+}
+
+.site-header .intro h1 {
+    width: 80%;
+    max-width: 700px;
+    @include margin($md-sp-unit auto 0);
+    z-index: 2;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.intro {
+    z-index: 300;
+    position: relative;
+}
+.parallax-hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 200vh;
+    background-color: darken(#daa555, 40%);
+    // mix-blend-mode: screen;
+    overflow: hidden;
+    opacity: 0.4;
+    z-index: -2;
+}
+
+.login {
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 110vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    // transition:all 0.6s 0.3s ease-out;
+    opacity: 1;
+    @include transition(all 0.3s ease);
+    @include transform(translateY(0%));
+    p {
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        max-width: 600px;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        top: 34%;
+        font-family: sans-serif;
+        // opacity: 0.6;
+        letter-spacing: 2px;
+        background:black;
+        @include padding($md-sp-unit $sm-sp-unit);
+        border:3px solid white;
+
+        // display:block;
+        // overflow:hidden;
+        input {
+            font-size: 25px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px white solid;
+            padding: 0.5em 0;
+            color: white;
+            text-align:left;
+            position: relative;
+            width:80%;
+            @include margin(0 auto);
+            &:focus {
+                outline-width: 0;
+            }
+        }
+    }
+    &.hide_me {
+        opacity: 0;
+        z-index: -50000;
+        @include transform(translateY(-100%));
+        @include transition(opacity 0.7s ease, all 0.5s ease);
+        input {
+            pointer-events: none;
+        }
+    }
+}
+
+// .sep {
+//  display: inline-block;
+//  width:2%;
+//  @include margin(0);
+//  font-size:2em;
+//  text-align:center;
+//  color:white;
+// }
+.overlay-btn {
+    width: 80%;
+    @include padding($sm-sp-unit);
+    @include margin($sm-sp-unit 10% $md-sp-unit);
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    min-width: 150px;
+    .fb-icon {
+        width: 100%;
+        max-width: 70px !important;
+        @include margin(0 auto);
+    }
+    .tnl-icon {
+        width: 100%;
+        max-width: 130px !important;
+        @include margin(1em auto 0);
+    }
+    .insta-icon {
+        width: 100%;
+        max-width: 70px !important;
+        @include margin(0 auto);
+    }
+
+
+    &:hover {
+        // background-color: #daa555;
+        color: black;
+        // mix-blend-mode: screen;
+    }
+}
+
+.hero-buttons {
+    width: 100%;
+    max-width: 650px;
+    @include margin(0 auto);
+    z-index: 2;
+    position: relative;
+}
+
+.menu-header .wrapper {
+    background: url(../img/atxlimages/barton_1970s.jpg);
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: scroll;
+    background-position: left top;
+    width: 100%;
+    height: 100vh;
+    z-index: 250;
+}
+
+.time .wrapper {
+    background: url(../img/atxlimages/Austin35@Riverside1970.jpg);
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: scroll;
+    background-position: left top;
+    width: 100%;
+    height: 100vh;
+    z-index: 150;
+
+}
+.time .wrapper .wrapper-inner p {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    color:white;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 24px;
+    word-spacing: 0;
+    letter-spacing: 0;
+}
+
+.shop .wrapper {
+    // background: url(../images/vintage.mov) no-repeat center center;
+    // background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 50%;
+        // @include padding( $md-sp-unit);
+        @include margin($lg-sp-unit auto);
+        max-width: 400px;
+    }
+}
+
+.hat {
+    background-color: white;
+    // @include padding($md-sp-unit 0);
+    @include margin(0 auto);
+}
+
+.hat .wrapper {
+    background: url(../img/hat.jpeg);
+    background-size: contain;
+    background-repeat:no-repeat;
+    position: relative;
+    background-attachment: scroll;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    top: 30%;
+    z-index: 4;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    @include padding($lg-sp-unit 0);
+    h2 {
+        position: absolute;
+        bottom: 4em;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        // width: 100%;
+        // max-width: 300px;
+        @include margin(0 auto);
+        color: #daa555;
+        font-weight: bold;
+        text-transform: uppercase;
+        // color:black;
+        // mix-blend-mode:screen;
+    }
+}
+
+.menu-header .wrapper .wrapper-inner,
+.time .wrapper .wrapper-inner,
+.show .wrapper .wrapper-inner,
+.hat .wrapper .wrapper-inner {
+    @include padding(0);
+}
+.container-fluid {
+    @include padding(0);
+}
+.aside {
+    background-color: black;
+    color: white;
+    width: 96%;
+    // right: 2%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    // overflow: hidden;
+
+    position: relative;
+    // @include padding($md-sp-unit $lg-sp-unit);
+    @include padding($md-sp-unit $md-sp-unit $lg-sp-unit);
+    @include margin(0 auto);
+    z-index: 200;
+    // &:before {
+    //     position: absolute;
+    //     content:'';
+    //     top:-50%;
+    //     bottom:0;
+    //     left:0;
+    //     right:0;
+    //     background-color: black;
+    //     height:300vh;
+    //     width:100%;
+    //     z-index: -1;
+    //     overflow: visible;
+    //     visibility: visible;
+
+    // }
+    p {
+        text-align: left;
+        @include margin($sm-sp-unit 0);
+        color: white;
+    }
+    img {
+        width: 90%;
+        max-width: 300px;
+        @include margin(0);
+    }
+}
+
+.time .aside {
+    // @include padding($lg-sp-unit);
+}
+
+.store {
+    background-color: black;
+    color: white;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    @include padding($md-sp-unit);
+    .item {
+        width: 45%;
+        @include margin($sm-sp-unit 1%);
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: top;
+        img {
+            width: 100%;
+        }
+        h3 {
+            font-size:20px;
+            text-align: left;
+            @include margin($md-sp-unit 0);
+        }
+    }
+
+
+    .store-btn {
+        background-color: green;
+        color:white;
+        @include padding($md-sp-unit);
+        position:fixed;
+        bottom:1em;
+        right:-50em;
+        // z-index: 100;
+        @include transition(all 0.3s ease);
+        &.show {
+            // position: fixed;
+            right:1em;
+
+        }
+
+    }
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-attachment: scroll;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // bottom:-10%;
+    width: auto;
+    height: 100vh;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        right: 0;
+        bottom: 0;
+        background-color: #daa555;
+        width: 200vh;
+        height: 100%;
+        opacity: .5;
+        z-index: 1;
+    }
+}
+
+.contact {
+    background-image: url(../img/atxlimages/Austin-Skyline.jpg);
+    // background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-attachment: scroll;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    @include padding($md-sp-unit 0);
+    position: relative;
+    // max-width: 400px;
+    width: 100%;
+    @include margin(0 auto);
+    overflow: hidden;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // background-color: #daa555;
+        width: 100%;
+        height: 100%;
+        opacity: .7;
+        z-index: -1;
+        // mix-blend-mode: screen;
+    }
+    form {
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-color: #daa555;
+        @include padding($md-sp-unit);
+        @include margin($md-sp-unit auto);
+    }
+    input,
+    textarea {
+        // font-family: $neu;
+        opacity: .5;
+        @include transition(opacity 500ms ease-in 0);
+        &:focus {
+            opacity: .8;
+            @include transition(opacity 500ms ease-in 0);
+        }
+    }
+    input[type=text] {
+        &.input-reg {
+            width: 98%;
+            vertical-align: top;
+            color: black;
+            // @include font(1.1);
+            @include margin(1em 1%);
+            @include padding(0.7em);
+            border: none;
+            position: relative;
+            z-index: 2;
+            // background: ;
+            border: 2px solid white;
+        }
+    }
+    .large-box {
+        width: 98%;
+        vertical-align: top;
+        text-align: left;
+        color: black;
+        // @include font(1.1);
+        @include margin(1em 1%);
+        @include padding(0.7em);
+        border: none;
+        position: relative;
+        z-index: 2;
+        // background: $thirdcolor;
+        height: 10em;
+        border: 2px solid white;
+    }
+}
+
+.footer,
+footer {
+    background: black;
+    @include margin(0 auto);
+}
+
+@media screen and (min-width:450px) {
+    .overlay-btn {
+        width: 30%;
+        @include margin($md-sp-unit 1%);
+    }
+    .store .item {
+        @include margin($md-sp-unit 1%);
+        width: 30%;
+        h3 {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (min-width:568px) {
+
+    .navbar-nav {
+        width: 65%;
+    }
+    .aside {
+        width: 50%;
+        right: 0;
+        // position: absolute;
+        float:right;
+    }
+    .menu-header .wrapper .wrapper-inner,
+    .time .wrapper .wrapper-inner,
+    .show .wrapper .wrapper-inner,
+    .hat .wrapper .wrapper-inner {
+        @include padding(0);
+    }
+    .store {
+        @include padding($lg-sp-unit $md-sp-unit);
+    }
+    .store .item {
+        @include margin($md-sp-unit*2 1%);
+        width: 20%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .site-header .intro h1 {
+        font-size: 24px;
+    }
+    .navbar-nav {
+        width: 65%;
+    }
+    .aside {
+        width: 40%;
+    }
+    // .store .item {
+    //     @include margin($md-sp-unit 1% 0);
+    //     width: 13.5%;
+    // }
+}
+
+@media screen and (min-width:993px) {
+    .navbar-nav {
+        // max-width: 65%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .navbar-nav {
+        max-width: 55%;
+    }
+    .fullscreen-bg__video {
+        top: 0;
+        width: 100vw;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .site-header .intro img {
+        max-width: 650px;
+    }
+}

@@ -1,0 +1,739 @@
+/*
+* Style tweaks
+* --------------------------------------------------
+*/
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: "Futura", Arial, Sans-Serif;
+    /* Prevent scroll on narrow devices */
+}
+
+body {
+    background-color: #222;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    padding: 30px 0;
+    float: left;
+    width: 100%;
+}
+
+.outer_shell {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*
+* Custom styles for navbar
+*/
+
+.navbar-toggle,
+.navbar-toggle .icon-bar {
+    border: 1px solid white;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #222;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container {
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+
+#header a {
+    color: white;
+    margin-left: 20px;
+}
+
+.navbar-right {
+    margin-right: 0;
+}
+
+#brand img {
+    height: 80%;
+    width: auto;
+    margin-top: 3%;
+}
+
+#brand {
+    padding: 0;
+}
+
+#navbar_toggle {
+    margin-right: 30px;
+}
+
+#navbar a {
+    position: relative;
+    color: #ddd;
+    text-decoration: none;
+    padding: 15px 0 5px 0;
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+#navbar a:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .0);
+}
+
+#navbar a:focus {
+    background: rgba(0, 0, 0, .0);
+}
+
+#navbar a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#navbar a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.fixed-theme #navbar a {
+    font-size: 18px;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+
+#my_active {
+    border-bottom: 3px solid #d7d6d6;
+}
+
+#my_active:hover {
+    border: none;
+}
+
+
+/*
+* Ad Styles
+*/
+
+#space_bottom {
+    height: 150px;
+    margin-top: 25px;
+}
+
+/*
+.space_right {
+    background-image: url(../img/ads/side_ad.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+}
+*/
+
+.phone_only {
+    position: fixed;
+    height: 75px;
+    background-image: url(../img/phone.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    bottom: 0;
+}
+
+
+/*
+* Hero styles
+*/
+
+.fade-in {
+    -webkit-animation: fade-in 2s ease;
+    -moz-animation: fade-in ease-in-out 2s both;
+    -ms-animation: fade-in ease-in-out 2s both;
+    -o-animation: fade-in ease-in-out 2s both;
+    animation: fade-in 2s ease;
+    visibility: visible;
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#banner-load {
+    height: 85vh;
+    overflow: hidden;
+    background-size: cover;
+    text-align: center;
+}
+
+#banner-load h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.TNL_logo {
+    width: 300px;
+    margin-top: 31vh;
+}
+
+
+/*
+* Three Circle styles
+*/
+
+.three_circles {
+    float: left;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 67vh;
+}
+
+.three_circles h3 {
+    color: white;
+}
+
+#atx_circle {
+    background-image: url(../img/atx_day_circle.jpg);
+    width: 144px;
+    border-radius: 50%;
+    height: 144px;
+    transition: 0.2s;
+    -webkit-transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+
+#atx_circle:hover {
+    background-image: url(../img/atx_night_circle.jpg);
+}
+
+#dtx_circle {
+    background-image: url(../img/dtx_day_circle.jpg);
+    width: 144px;
+    border-radius: 50%;
+    height: 144px;
+    transition: 0.2s;
+    -webkit-transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+
+#dtx_circle:hover {
+    background-image: url(../img/dtx_night_circle.jpg);
+}
+
+#htx_circle {
+    background-image: url(../img/htx_day_circle.jpg);
+    width: 144px;
+    border-radius: 50%;
+    height: 144px;
+    transition: 0.2s;
+    -webkit-transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+
+#htx_circle:hover {
+    background-image: url(../img/htx_night_circle.jpg);
+}
+
+.three_circles> div {
+    display: inline-block;
+}
+
+.three_circles> div:nth-child(2) {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.mobile_circles h3 {
+    position: absolute;
+    margin-top: 35px;
+    min-width: 50%;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 75px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.66);
+}
+
+@media screen and (max-width: 767px) {
+    #htx_circle,
+    #dtx_circle,
+    #atx_circle {
+        width: 100%;
+        height: 150px;
+        border-radius: 0;
+    }
+}
+
+
+/*
+* Featured styles
+*/
+
+#featured_section {
+    text-align: center;
+    color: white;
+    width: 100%;
+    float: left;
+    height: 430px;
+}
+
+#featured_section h2,
+#featured_section p {
+    margin-bottom: 40px;
+}
+
+div.non_index#featured_section {
+    padding-top: 50px;
+}
+
+#featured_section a {
+    color: #eee;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, .8);
+    border: 1px solid white;
+    display: inline-block;
+}
+
+#featured_section a:hover {
+    background-color: rgba(0, 0, 0, .0);
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+
+@media screen and (max-width: 767px) {
+    #featured_section {
+        padding-top: 15px;
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 150px;
+    }
+    #space_bottom {
+        height: 75px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    #featured_section {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    #featured_section {
+        height: 300px;
+    }
+    #space_bottom {
+        height: 100px;
+    }
+}
+
+
+/*
+* Calendar Styles
+*/
+
+.calendar_section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+
+/*
+* Bar logo Styles
+*/
+
+.bar_logos {
+    padding: 30px;
+    background-color: #000;
+    float: left;
+}
+
+
+/*
+* Modal Styles
+*/
+
+.modal-dialog {
+    width: 60%;
+    border: 10px solid rgba(255, 255, 255, .4);
+    border-radius: 5px;
+    margin-top: 15vh;
+}
+
+.modal-title {
+    font-size: 30px;
+    float: left;
+    margin-top: 10px;
+}
+
+.modal_pic {
+    height: 100px;
+    width: auto;
+    display: inline;
+    float: right;
+}
+
+.modal_title {
+    float: left;
+}
+
+.modal-header {
+    text-align: left;
+    float: left;
+    width: 100%;
+}
+
+.modal-body {
+    float: left;
+    width: 100%;
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.modal_links {
+    width: 100%;
+    text-align: right;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.modal_links a {
+    color: white;
+}
+
+.my_close {
+    color: white;
+    margin: 15px;
+}
+
+.map_link {
+    color: white;
+    font-size: 24px;
+}
+
+.map_link:hover {
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .modal-dialog {
+        width: 100%;
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .modal_pic {
+        display: none;
+    }
+}
+
+.bar_logos .col-md-3 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+* Bar Specific Modal Changes
+*/
+
+#SanJacSaloonModal .modal-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/atx_bars/modal_backgrounds/sanjacbackground.jpg) no-repeat center;
+    background-size: cover;
+    color: #e8d287;
+}    
+
+#ThirstyNickelModal .modal-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/atx_bars/modal_backgrounds/thirstybackground.jpg) no-repeat center;
+    background-size: cover;
+    color: #e8d287;
+
+}
+
+
+/*
+* Photo Page Changes
+*/
+
+.photo_section h2 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.photo_section {
+    padding-bottom: 50px;
+    background-image: url(../img/broken_noise.png);
+    background-size: contain;
+    background-repeat: repeat;
+    float: left;
+    width: 100%;
+    min-height: 60vh;
+}
+
+.photo_section .col-sm-4 {
+    margin-bottom: 15px;
+}
+
+.photo_section button {
+    width: 100%;
+}
+
+.photo_section li {
+    list-style-type: none;
+    padding: 10px 0 10px 25px;
+    background-color: #222;
+    font-size: 18px;
+}
+
+.photo_section a {
+    color: white;
+}
+
+.photo_section a:hover {
+    color: #eee;
+    text-decoration: none;
+}
+
+.photo_section li:hover {
+    background-color: #dddddd;
+    color: #222222;
+    border: 1px solid #222222;
+}
+
+.photo_section ul {
+    padding: 0 10px;
+}
+
+.my_photo_button {
+    border-radius: 2px;
+    font-size: 30px;
+    background-color: #03b4f6;
+    color: white;
+}
+
+.my_photo_button:hover {
+    -webkit-box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    color: white;
+    background-color: #222;
+}
+
+.my_photo_button:focus {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    color: white;
+    background-color: #222;
+}
+
+.icon {
+    color: #20B5F3;
+    padding-top: 20px;
+}
+
+#footer p {
+    color: #20B5F3;
+}
+
+#footer {
+    text-align: center;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+#footer ul li {
+    display: inline;
+}
+
+#footer a:hover {
+    text-decoration: none;
+}
+
+/*
+
+NLT Styles 
+
+*/
+
+.nlt {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/ads/NLT.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    height: 210px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    .nlt {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .nlt {
+        height: 100px;
+    }
+}
+
+.nightlife_tours {
+    text-align: center;
+    color: white;
+    padding: 2% 10%;
+    
+}
+
+.nightlife_tours p {
+    font-size: 20px;
+}
+
+.select_package {
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.select_package p {
+    text-align: left;
+}
+
+.disclaimer {
+    font-size: 10px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.form-horizontal {
+    float: left;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #333;
+}
+
+
+.form-horizontal label {
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+input {
+    color: black;
+    width: 100%;
+}
+
+select {
+    color: #333;
+}
+
+.submit_button {
+    background-color: #20B5F3;
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+}
+
+/*
+
+Thank You
+
+*/
+
+.thank_you {
+    height: 90vh;
+    padding:20% 10%;
+    text-align: center;
+    color:white;
+}
