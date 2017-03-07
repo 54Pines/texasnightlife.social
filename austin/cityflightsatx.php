@@ -10,12 +10,12 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Texas Nightlife - Austin Group Tours</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Styles -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/0a257e644a.js"></script>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,14 +35,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="brand" class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Texas Nightlife" title="Texas Nightlife"></a>
+                <a id="brand" class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="Texas Nightlife" title="Texas Nightlife"></a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="austin.html">ATX</a></li>
-                    <li><a href="austin-bars.html">Bars</a></li>
-                    <li><a href="austin-photos.html">Photos</a></li>
-                    <li><a href="austin.html#calendar">Calendar</a></li>
+                    <li><a href="../austin.html">ATX</a></li>
+                    <li><a href="bars.html">Bars</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="../austin.html#calendar">Calendar</a></li>
                     <li><a href="http://www.shoptexasnightlife.com">Bar Apparel</a></li>
                 </ul>
             </div>
@@ -55,7 +55,7 @@
     <div class="col-sm-12 outer_shell">
         <!-- hero image -->
         <div id="banner-load" class="fade-in">
-            <img class="TNL_logo" src="img/TNL_Blue.png" alt="Texas Nightlife Logo" />
+            <img class="TNL_logo" src="../img/TNL_Blue.png" alt="Texas Nightlife Logo" />
             <h2>Book Your Private Nightlife Tour!</h2>
         </div>
         <!-- Text Section -->
@@ -152,7 +152,7 @@
 
         </div>
 
-        <form action="mailer.php" method="POST" id="group-form" class="form-horizontal">
+        <form action="../mailer.php" method="POST" id="group-form" class="form-horizontal">
             <h2>Please Fill Out This Form</h2>
             <div class="col-xs-12 col-sm-3 col-sm-offset-3 text-left">
                 <div class="control-group">
@@ -280,11 +280,11 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <!-- navbar js -->
-    <script src="js/navbar.js"></script>
+    <script src="../js/navbar.js"></script>
     <!-- hero js -->
-    <script src="js/hero.js"></script>
+    <script src="../js/hero-austin-folder.js"></script>
     <!-- Bootstrap Date-Picker Plugin -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
