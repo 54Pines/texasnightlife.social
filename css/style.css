@@ -531,7 +531,23 @@ div.non_index#featured_section {
     color: #e8d287;
 
 }
+#BlindPigModal .modal-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/atx_bars/modal_backgrounds/blind_pig_background.jpg) no-repeat center;
+    background-size: cover;
+    color: #e8d287;
+}
 
+#HangarLoungeModal .modal-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/atx_bars/modal_backgrounds/hangar_lounge_background.jpg) no-repeat center;
+    background-size: cover;
+    color: #e8d287;
+}
+
+#HandleBarModal .modal-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/atx_bars/modal_backgrounds/handlebar_background.jpg) no-repeat center;
+    background-size: cover;
+    color: #e8d287;
+}
 
 /*
 * Photo Page Changes
@@ -646,7 +662,7 @@ NLT Styles
     width: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(../img/ads/NLT.jpg);
+    background-image: url(../img/ads/austin_nightlife_tours.jpg);
     background-size: cover;
     background-position: center;
     float: left;

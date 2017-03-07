@@ -43,7 +43,7 @@
                     <li><a href="austin-bars.html">Bars</a></li>
                     <li><a href="austin-photos.html">Photos</a></li>
                     <li><a href="austin.html#calendar">Calendar</a></li>
-                    <li><a href="apparel.html">Bar Apparel</a></li>
+                    <li><a href="http://www.shoptexasnightlife.com">Bar Apparel</a></li>
                 </ul>
             </div>
             <!-- /.nav-collapse -->
@@ -56,7 +56,7 @@
         <!-- hero image -->
         <div id="banner-load" class="fade-in">
             <img class="TNL_logo" src="img/TNL_Blue.png" alt="Texas Nightlife Logo" />
-            <h2>Find yourself from last night!</h2>
+            <h2>Book Your Private Nightlife Tour!</h2>
         </div>
         <!-- Text Section -->
         <div class="container-fluid">
